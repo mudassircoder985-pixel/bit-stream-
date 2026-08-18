@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Content Security Policy to prevent unauthorized script injections -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline';">
+
+    <!-- Meta Tags -->
+    <title>BeatFlow - Personal Music Player</title>
+    <meta name="title" content="BeatFlow - Personal Music Player">
+    <meta name="description"
+        content="BeatFlow - A web development portfolio project for listening to music.">
+    <meta name="keywords" content="music player, web dev project, portfolio, online music">
+    <meta name="author" content="BeatFlow">
+
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex color">
+        <!-- Left Sidebar -->
+        <div class="left">
+            <div class="close"><img class="invert" src="close.svg" alt="Close Menu" width="29" height="29"></div>
+
+            <div class="home bg-grey rounded m1 p1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="BeatFlow Logo" height="80"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home Icon" width="20" height="20">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search Icon" width="20" height="20">Search</li>
+                </ul>
+            </div>
+
+            <div class="library color bg-grey rounded m1 p1">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="Playlist Icon" width="24" height="24">
+                    <h2>All songs collection</h2>
+                </div>
+                <div class="songlist">
+                    <ul></ul>
+                </div>
+
+                <div class="footer">
+                    <div>
+                        <a href="#"><span>Legal</span></a>
+                        <a href="#"><span>Privacy Center</span></a>
+                        <a href="#"><span>Privacy Policy</span></a>
+                        <a href="#"><span>Cookies</span></a>
+                        <a href="#"><span>About Ads</span></a>
+                        <a href="#"><span>Accessibility</span></a>
+                    </div>
+                    <!-- Educational Project Disclaimer -->
+                    <p style="font-size: 11px; color: #a7a7a7; margin-top: 10px; padding: 0 10px;">
+                        Disclaimer: This website is a personal web development portfolio project created for educational purposes only. It is not affiliated with or endorsed by any commercial music streaming service.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Main Content -->
+        <div class="right bg-grey rounded">
+            <div class="header items-center">
+                <div class="nav">
+                    <div class="hamburgercontainer">
+                        <img width="30" height="30" class="invert hamburger" src="hamburger.svg" alt="Hamburger Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4" d="M31 36L19 24l12-12" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                            <path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="4" d="M19 12L31 24L19 36" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Removed Login & Signup buttons to avoid phishing false-positives -->
+            </div>
+
+            <!-- Changed class name from spotifyPlaylist to popularPlaylists -->
+            <div class="popularPlaylists">
+                <h1>Two songs Playlist</h1>
+                <div class="cardContainer">
+
+                    <div class="card">
+                        <div class="play">
+                            <div class="plaay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M5 20V4L19 12L5 20Z" stroke="#000000" fill="#000000" stroke-width="1.5"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <img src="arjit.jpg" alt="Arijit Singh" width="200" height="200" style="border-radius: 50%;">
+                        <h2>Arijit Singh</h2>
+                        <p>My therapy is a playlist with no skip!!..</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="sec">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#ffffff" fill="#ffffff" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="karan aujla.jpg" alt="Karan Aujla" width="200" height="200"
+                            style="border-radius: 50%;">
+                        <h2>Karan Aujla</h2>
+                        <p>Press play to cry. Press pause to pretend that you are fine..!</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="third">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" fill="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="thala anjum.jpg" alt="Talha Anjum" width="200" height="200"
+                            style="border-radius: 50%;">
+                        <h2>Talha Anjum</h2>
+                        <p>Press play to cry. Press pause to pretend that I am fine</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="fourth">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#ffffff" fill="#ffffff" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="atif.jpeg" alt="Atif Aslam" width="200" height="200" style="border-radius: 50%;">
+                        <h2>Atif Aslam</h2>
+                        <p>Press play to cry. Press pause to pretend that I am fine</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="fifth">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" fill="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="diljit.jpg" alt="Diljit Dosanjh" width="200" height="200" style="border-radius: 50%;">
+                        <h2>Diljit Dosanjh</h2>
+                        <p>Press play to cry. Press pause to pretend that I am fine</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="sixth">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#ffffff" fill="#ffffff" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="shub pic.jpg" alt="Shubh" width="200" height="200" style="border-radius: 50%;">
+                        <h2>Shubh</h2>
+                        <p>Press play to cry. Press pause to pretend that I am fine</p>
+                    </div>
+
+                    <div class="card">
+                        <div class="seventh">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" fill="#000000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="jubin pic.jpg" alt="Jubin Nautiyal" width="200" height="200"
+                            style="border-radius: 50%;">
+                        <h2>Jubin Nautiyal</h2>
+                        <p>Press play to cry. Press pause to pretend that I am fine</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="playbar cursor">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="song-buttons">
+                        <img width="30" height="30" class="pre" src="prevsong.svg" alt="Previous Song">
+                        <img width="30" height="30" class="btn" src="play.svg" alt="Play Song">
+                        <img width="30" height="30" class="next" src="nextsong.svg" alt="Next Song">
+                    </div>
+                    <div class="timevol">
+                        <div class="songtime"></div>
+                        <div class="volume">
+                            <img src="music.svg" alt="Volume Icon" width="20" height="20">
+                            <div class="range">
+                                <input type="range" class="volume" aria-label="Volume Control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
